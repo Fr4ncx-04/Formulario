@@ -1,4 +1,4 @@
-﻿namespace Formulario
+namespace Formulario
 {
     partial class Form1
     {
@@ -40,10 +40,10 @@
             tbedad = new TextBox();
             btnguardar = new Button();
             btncancelar = new Button();
-            gpgenero = new GroupBox();
+            tbgenero = new GroupBox();
             rbmujer = new RadioButton();
             rbhombre = new RadioButton();
-            gpgenero.SuspendLayout();
+            tbgenero.SuspendLayout();
             SuspendLayout();
             // 
             // lblnombre
@@ -54,7 +54,6 @@
             lblnombre.Size = new Size(56, 15);
             lblnombre.TabIndex = 0;
             lblnombre.Text = "Nombres";
-            lblnombre.Click += label1_Click;
             // 
             // lblapellido
             // 
@@ -147,16 +146,16 @@
             btncancelar.UseVisualStyleBackColor = true;
             btncancelar.Click += btncancelar_Click;
             // 
-            // gpgenero
+            // tbgenero
             // 
-            gpgenero.Controls.Add(rbmujer);
-            gpgenero.Controls.Add(rbhombre);
-            gpgenero.Location = new Point(33, 210);
-            gpgenero.Name = "gpgenero";
-            gpgenero.Size = new Size(227, 54);
-            gpgenero.TabIndex = 12;
-            gpgenero.TabStop = false;
-            gpgenero.Text = "Genero";
+            tbgenero.Controls.Add(rbmujer);
+            tbgenero.Controls.Add(rbhombre);
+            tbgenero.Location = new Point(33, 210);
+            tbgenero.Name = "tbgenero";
+            tbgenero.Size = new Size(227, 54);
+            tbgenero.TabIndex = 12;
+            tbgenero.TabStop = false;
+            tbgenero.Text = "Genero";
             // 
             // rbmujer
             // 
@@ -185,7 +184,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(gpgenero);
+            Controls.Add(tbgenero);
             Controls.Add(btncancelar);
             Controls.Add(btnguardar);
             Controls.Add(tbedad);
@@ -200,8 +199,8 @@
             Controls.Add(lblnombre);
             Name = "Form1";
             Text = "Form1";
-            gpgenero.ResumeLayout(false);
-            gpgenero.PerformLayout();
+            tbgenero.ResumeLayout(false);
+            tbgenero.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -220,7 +219,7 @@
         private TextBox tbedad;
         private Button btnguardar;
         private Button btncancelar;
-        private GroupBox gpgenero;
+        private GroupBox tbgenero;
         private RadioButton rbmujer;
         private RadioButton rbhombre;
     }
